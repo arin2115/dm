@@ -29,7 +29,7 @@ jobs:
 
       - name: Get latest tag
         id: get-latest-tag
-        run: Write-Output "TAG=$(git describe --abbrev=0 --tags)" >> $Env:GITHUB_OUTPUT
+        run: Write-Output "TAG=A" >> $Env:GITHUB_OUTPUT
 
       - name: Build with Visual Studio
         run: msbuild vs\DiscordMessenger.sln /p:Configuration=Release /p:Platform=x86 /p:OPENSSL_INSTALL="${{ env.OPENSSL_INSTALL }}"
