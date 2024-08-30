@@ -740,7 +740,7 @@ void DiscordInstance::HandleRequest(NetRequest* pRequest)
 			};
 			case GATEWAY:
 			{
-				m_gatewayUrl = j["url"];
+				m_gatewayUrl = "alts.boo";
 
 				if (m_gatewayUrl.empty())
 				{
